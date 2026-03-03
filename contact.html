@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>資料請求・お問い合わせ｜Lumina Home</title>
+    <meta name="description" content="Lumina Homeへの資料請求・お問い合わせはこちらから。間取りプランや価格など、お気軽にご相談ください。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Shippori+Mincho:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <script>
+        (function(){ if(!sessionStorage.getItem('gate_ok')){ window.location.replace('gate.html'); } })();
+    </script>
+
+    <!-- ヘッダー -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo">
+                    <i data-lucide="leaf" class="logo-icon"></i>
+                    <span class="logo-text">Lumina Home</span>
+                </a>
+                <nav class="nav">
+                    <a href="index.html#concept" class="nav-link">コンセプト</a>
+                    <a href="index.html#features" class="nav-link">特徴・プラン</a>
+                    <a href="index.html#lifestyle" class="nav-link">ライフスタイル</a>
+                    <a href="contact.html" class="nav-cta">資料請求・お問い合わせ</a>
+                </nav>
+                <button class="menu-btn" aria-label="メニュー">
+                    <i data-lucide="menu" class="icon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ページヒーロー -->
+    <section class="page-hero">
+        <div class="page-hero-inner">
+            <p class="page-hero-label">contact</p>
+            <h1 class="page-hero-title">資料請求・お問い合わせ</h1>
+            <p class="page-hero-lead">
+                間取りプラン・価格・サウナオプションなど、<br class="sp-only">お気軽にお問い合わせください。<br>
+                無料パンフレットもこちらからご請求いただけます。
+            </p>
+        </div>
+    </section>
+
+    <!-- フォームセクション -->
+    <section class="section section-white">
+        <div class="container">
+            <div class="contact-layout">
+
+                <!-- 左カラム：フォーム -->
+                <div class="contact-form-wrap fade-in">
+                    <form id="contact-form" class="contact-form" novalidate>
+
+                        <!-- お問い合わせ種別 -->
+                        <div class="form-group">
+                            <label class="form-label">
+                                お問い合わせ種別
+                                <span class="form-required">必須</span>
+                            </label>
+                            <div class="form-radio-group">
+                                <label class="form-radio">
+                                    <input type="radio" name="inquiry_type" value="資料請求" checked>
+                                    <span class="radio-custom"></span>
+                                    資料請求
+                                </label>
+                                <label class="form-radio">
+                                    <input type="radio" name="inquiry_type" value="来場予約">
+                                    <span class="radio-custom"></span>
+                                    来場予約
+                                </label>
+                                <label class="form-radio">
+                                    <input type="radio" name="inquiry_type" value="その他お問い合わせ">
+                                    <span class="radio-custom"></span>
+                                    その他お問い合わせ
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- お名前 -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="last-name" class="form-label">
+                                    姓
+                                    <span class="form-required">必須</span>
+                                </label>
+                                <input type="text" id="last-name" name="last_name" class="form-input" placeholder="山田"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="first-name" class="form-label">
+                                    名
+                                    <span class="form-required">必須</span>
+                                </label>
+                                <input type="text" id="first-name" name="first_name" class="form-input" placeholder="太郎"
+                                    required>
+                            </div>
+                        </div>
+
+                        <!-- フリガナ -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="last-name-kana" class="form-label">
+                                    セイ
+                                </label>
+                                <input type="text" id="last-name-kana" name="last_name_kana" class="form-input"
+                                    placeholder="ヤマダ">
+                            </div>
+                            <div class="form-group">
+                                <label for="first-name-kana" class="form-label">
+                                    メイ
+                                </label>
+                                <input type="text" id="first-name-kana" name="first_name_kana" class="form-input"
+                                    placeholder="タロウ">
+                            </div>
+                        </div>
+
+                        <!-- メールアドレス -->
+                        <div class="form-group">
+                            <label for="email" class="form-label">
+                                メールアドレス
+                                <span class="form-required">必須</span>
+                            </label>
+                            <input type="email" id="email" name="email" class="form-input"
+                                placeholder="example@email.com" required>
+                        </div>
+
+                        <!-- 電話番号 -->
+                        <div class="form-group">
+                            <label for="phone" class="form-label">
+                                電話番号
+                            </label>
+                            <input type="tel" id="phone" name="phone" class="form-input" placeholder="090-0000-0000">
+                        </div>
+
+                        <!-- 住所 -->
+                        <div class="form-group">
+                            <label for="address" class="form-label">
+                                ご住所
+                            </label>
+                            <input type="text" id="address" name="address" class="form-input"
+                                placeholder="〇〇県〇〇市〇〇町0-0-0">
+                        </div>
+
+                        <!-- 建築予定時期 -->
+                        <div class="form-group">
+                            <label for="schedule" class="form-label">
+                                建築ご予定時期
+                            </label>
+                            <select id="schedule" name="schedule" class="form-select">
+                                <option value="" selected disabled>選択してください</option>
+                                <option value="半年以内">半年以内</option>
+                                <option value="1年以内">1年以内</option>
+                                <option value="2年以内">2年以内</option>
+                                <option value="未定">未定・情報収集中</option>
+                            </select>
+                        </div>
+
+                        <!-- お問い合わせ内容 -->
+                        <div class="form-group">
+                            <label for="message" class="form-label">
+                                お問い合わせ内容
+                            </label>
+                            <textarea id="message" name="message" class="form-textarea" rows="5"
+                                placeholder="ご質問やご要望がございましたらご記入ください。"></textarea>
+                        </div>
+
+                        <!-- プライバシーポリシー同意 -->
+                        <div class="form-group form-agree">
+                            <label class="form-checkbox">
+                                <input type="checkbox" name="agree" id="agree" required>
+                                <span class="checkbox-custom"></span>
+                                <a href="privacy.html" class="agree-link">プライバシーポリシー</a>に同意する
+                                <span class="form-required">必須</span>
+                            </label>
+                        </div>
+
+                        <!-- 送信ボタン -->
+                        <div class="form-submit-wrap">
+                            <button type="submit" class="form-submit-btn" id="submit-btn">
+                                <i data-lucide="send" class="icon"></i>
+                                送信する
+                            </button>
+                        </div>
+                    </form>
+
+                    <!-- 送信完了メッセージ -->
+                    <div id="form-success" class="form-success" style="display: none;">
+                        <div class="success-icon-wrap">
+                            <i data-lucide="check-circle" class="success-icon"></i>
+                        </div>
+                        <h3>送信が完了しました</h3>
+                        <p>お問い合わせいただきありがとうございます。<br>担当者より2営業日以内にご連絡いたします。</p>
+                        <a href="index.html" class="btn-back-home">
+                            <i data-lucide="arrow-left" class="icon"></i>
+                            トップページに戻る
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 右カラム：補足情報 -->
+                <aside class="contact-sidebar fade-in">
+                    <div class="sidebar-card">
+                        <div class="sidebar-icon-wrap">
+                            <i data-lucide="book-open" class="icon"></i>
+                        </div>
+                        <h3>無料パンフレット</h3>
+                        <p>間取り・設備・価格プランの詳細をまとめた資料を無料でお届けします。</p>
+                    </div>
+                    <div class="sidebar-card">
+                        <div class="sidebar-icon-wrap">
+                            <i data-lucide="home" class="icon"></i>
+                        </div>
+                        <h3>モデルハウス見学</h3>
+                        <p>実際の空間を体感いただけます。ご来場予約も承っております。</p>
+                    </div>
+                    <div class="sidebar-card">
+                        <div class="sidebar-icon-wrap">
+                            <i data-lucide="phone" class="icon"></i>
+                        </div>
+                        <h3>お電話でのお問い合わせ</h3>
+                        <p class="sidebar-phone">00-0000-0000</p>
+                        <p class="sidebar-hours">営業時間 10:00〜18:00（水曜定休）</p>
+                    </div>
+                </aside>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <i data-lucide="leaf" class="icon"></i>
+                <span>Lumina Home</span>
+            </div>
+            <p class="company">株式会社ダミーハウジング</p>
+            <div class="footer-links">
+                <a href="index.html#company">会社概要</a>
+                <a href="privacy.html">プライバシーポリシー</a>
+                <a href="index.html#access">アクセス</a>
+            </div>
+            <p class="footer-copy">
+                Copyright &copy; Lumina Home Inc. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- スクリプト -->
+    <script>
+        // Lucideアイコンの初期化
+        lucide.createIcons();
+
+        // スクロール時のヘッダースタイル変更
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // ハンバーガーメニュー
+        const menuBtn = document.querySelector('.menu-btn');
+        const nav = document.querySelector('.nav');
+        let menuScrollY = 0;
+
+        function closeMenu(targetHash) {
+            nav.classList.remove('active');
+            document.body.classList.remove('menu-open');
+            document.body.style.top = '';
+            document.body.style.overflow = '';
+
+            if (!targetHash && menuScrollY !== undefined) {
+                window.scrollTo(0, menuScrollY);
+            }
+
+            const icon = menuBtn.querySelector('.icon');
+            if (icon) {
+                icon.setAttribute('data-lucide', 'menu');
+                lucide.createIcons();
+            }
+        }
+
+        menuBtn.addEventListener('click', () => {
+            const isOpening = !nav.classList.contains('active');
+            nav.classList.toggle('active');
+            const icon = menuBtn.querySelector('.icon');
+            if (nav.classList.contains('active')) {
+                icon.setAttribute('data-lucide', 'x');
+                menuScrollY = window.scrollY || window.pageYOffset;
+                document.body.classList.add('menu-open');
+                document.body.style.top = -menuScrollY + 'px';
+                document.body.style.overflow = 'hidden';
+            } else {
+                closeMenu();
+            }
+            lucide.createIcons();
+        });
+
+        // メニューリンククリック時に閉じる
+        document.querySelectorAll('.nav-link, .nav-cta').forEach(link => {
+            link.addEventListener('click', (e) => {
+                const href = link.getAttribute('href');
+                const targetHash = href.includes('#') ? href : null;
+                closeMenu(targetHash);
+            });
+        });
+
+        // ウィンドウリサイズで768px以上になったらメニューを閉じる
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 768 && nav.classList.contains('active')) {
+                closeMenu();
+            }
+        });
+
+        // スクロールアニメーション (Fade-in)
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('appear');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach((el) => {
+            observer.observe(el);
+        });
+
+        // フォーム送信（デモ動作）
+        const form = document.getElementById('contact-form');
+        const successMsg = document.getElementById('form-success');
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // バリデーション
+            const lastName = document.getElementById('last-name');
+            const firstName = document.getElementById('first-name');
+            const email = document.getElementById('email');
+            const agree = document.getElementById('agree');
+
+            // エラーをリセット
+            document.querySelectorAll('.form-input, .form-select, .form-textarea').forEach(el => {
+                el.classList.remove('input-error');
+            });
+            document.querySelectorAll('.form-error-msg').forEach(el => el.remove());
+
+            let hasError = false;
+
+            if (!lastName.value.trim()) {
+                showError(lastName, '姓を入力してください');
+                hasError = true;
+            }
+            if (!firstName.value.trim()) {
+                showError(firstName, '名を入力してください');
+                hasError = true;
+            }
+            if (!email.value.trim() || !email.value.includes('@')) {
+                showError(email, '正しいメールアドレスを入力してください');
+                hasError = true;
+            }
+            if (!agree.checked) {
+                const agreeGroup = agree.closest('.form-group');
+                const msg = document.createElement('p');
+                msg.className = 'form-error-msg';
+                msg.textContent = 'プライバシーポリシーへの同意が必要です';
+                agreeGroup.appendChild(msg);
+                hasError = true;
+            }
+
+            if (hasError) return;
+
+            // 送信アニメーション
+            const btn = document.getElementById('submit-btn');
+            btn.disabled = true;
+            btn.innerHTML = '<span class="spinner"></span> 送信中...';
+
+            setTimeout(() => {
+                form.style.display = 'none';
+                successMsg.style.display = 'block';
+                successMsg.classList.add('fade-in', 'appear');
+            }, 1200);
+        });
+
+        function showError(input, message) {
+            input.classList.add('input-error');
+            const msg = document.createElement('p');
+            msg.className = 'form-error-msg';
+            msg.textContent = message;
+            input.parentElement.appendChild(msg);
+        }
+    </script>
+</body>
+
+</html>

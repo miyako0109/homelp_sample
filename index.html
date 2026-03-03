@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>規格住宅 Sky Resort｜2階リビングの我が家でリゾートしよう</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Shippori+Mincho:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <script>
+        (function(){ if(!sessionStorage.getItem('gate_ok')){ window.location.replace('gate.html'); } })();
+    </script>
+
+    <!-- ヘッダー -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo">
+                    <i data-lucide="leaf" class="logo-icon"></i>
+                    <span class="logo-text">Lumina Home</span>
+                </a>
+                <nav class="nav">
+                    <a href="#concept" class="nav-link">コンセプト</a>
+                    <a href="#features" class="nav-link">特徴・プラン</a>
+                    <a href="#lifestyle" class="nav-link">ライフスタイル</a>
+                    <a href="contact.html" class="nav-cta">資料請求・お問い合わせ</a>
+                </nav>
+                <button class="menu-btn" aria-label="メニュー">
+                    <i data-lucide="menu" class="icon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ヒーローセクション -->
+    <section class="hero">
+        <div class="hero-inner fade-in">
+            <h1 class="hero-title">Home Resort Series</h1>
+            <div class="hero-lead-wrap">
+                <h2 class="hero-subheading">リラクゼーションの粋が<br class="sp-only">集まるリビング</h2>
+                <p class="hero-lead">
+                    毎日がリゾート、毎日がアウトドア<br>
+                    夕方に帰宅してゆったりサウナで整え<br>
+                    2階リビングでチルアウト<br>
+                    自分時間・家族時間を毎日満喫するために創まれたのが<br>
+                    - Home Resort Series -
+                </p>
+            </div>
+            <a href="contact.html" class="btn-cta">資料請求はこちら</a>
+        </div>
+        <div class="scroll-hint">
+            <i data-lucide="chevron-down" class="icon"></i>
+        </div>
+    </section>
+
+    <!-- コンセプト：1/fのゆらぎ -->
+    <section id="concept" class="section section-white">
+        <div class="container">
+            <div class="section-title-wrap fade-in">
+                <p class="section-concept">concept</p>
+                <h2 class="section-title">1/f のゆらぎ</h2>
+                <div class="section-title-accent"></div>
+                <p class="section-lead">
+                    川のせせらぎや木漏れ日、炎の揺らめき。<br>
+                    なぜか心が安らぐ──<br class="sp-only">その秘密が「1/f のゆらぎ」です。<br>
+                    この安らぎと暮らすための、<br class="sp-only">2階リビングとアウトドアバルコニーです。
+                </p>
+            </div>
+
+            <div class="concept-grid">
+                <div class="concept-card fade-in">
+                    <div class="img-wrap">
+                        <img src="https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="通風設計"
+                            class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700">
+                        <div class="img-overlay"></div>
+                    </div>
+                    <h3><i data-lucide="wind" class="icon"></i> 通風設計</h3>
+                    <p>頬をなでるような、やわらかな風の心地よさを計算した窓配置と空間設計。</p>
+                </div>
+                <div class="concept-card fade-in">
+                    <div class="img-wrap">
+                        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="採光設計"
+                            class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700">
+                        <div class="img-overlay"></div>
+                    </div>
+                    <h3><i data-lucide="sun" class="icon"></i> 採光設計</h3>
+                    <p>グリーンを透かしてリビングに差し込む木漏れ日が、時間の移ろいを美しく描きます。</p>
+                </div>
+                <div class="concept-card fade-in">
+                    <div class="img-wrap">
+                        <img src="https://images.unsplash.com/photo-1584622781564-1d987f7333c1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="アウトドアリビング"
+                            class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700">
+                        <div class="img-overlay"></div>
+                    </div>
+                    <h3><i data-lucide="flame" class="icon"></i> アウトドアリビング</h3>
+                    <p>バルコニーでサウナ、焚き火などで炎の揺れを楽しむ、極上のプライベート空間。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 特徴・プラン概要 -->
+    <section class="section-dark">
+        <div class="container">
+            <div class="plan-flex fade-in">
+                <div class="plan-text">
+                    <h2>
+                        光と風を取り込みながら、<br>
+                        視線を遮る設計。
+                    </h2>
+                    <p>
+                        1階では難しかった"開放感と安心感の両立"を実現しました。家族で過ごす時間も、自分だけのリフレッシュも叶える住まいです。
+                    </p>
+                    <p>
+                        サウナで心身を整え、中庭バルコニーで子どもたちと遊び、休日には家族そろって食事を。柔軟な規格プランで4人家族にぴったり寄り添い、日常を心地よく彩る暮らしがここにあります。
+                    </p>
+                    <div class="price-box">
+                        <p class="price-label">参考プラン 建物本体価格</p>
+                        <p class="price-value">23,800,000<span class="unit">円〜</span> <span
+                                class="price-note">(税込)</span></p>
+                    </div>
+                </div>
+                <div class="plan-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="外観イメージ">
+                    <div class="plan-badge">
+                        <p>サウナ × 中庭バルコニーの家</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 特徴詳細 (Z字レイアウト) -->
+    <section id="features" class="section section-brand-50">
+        <div class="container">
+            <div class="section-title-wrap fade-in">
+                <p class="section-concept">features</p>
+                <h2 class="section-title">快適をデザインする設計</h2>
+                <div class="section-title-accent"></div>
+            </div>
+
+            <div class="features-list">
+                <div class="feature-row fade-in">
+                    <div class="feature-col">
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="独立洗面" class="feature-img">
+                    </div>
+                    <div class="feature-col feature-body">
+                        <h3>独立した洗面と大容量クローク</h3>
+                        <p>
+                            脱衣室と分かれた洗面。忙しい朝も家族が混み合うことなく、気兼ねなく使える自由設計でも人気の間取りです。
+                        </p>
+                        <p>
+                            隣接するセントラル収納（クローク）で家族の衣類をまとめて収納。家事動線と面積活用の面で非常に効率的で、リビングに物が散らかりません。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="feature-row reverse fade-in">
+                    <div class="feature-col">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="勾配天井のリビング" class="feature-img">
+                    </div>
+                    <div class="feature-col feature-body">
+                        <h3>開放感を生む勾配天井とゾーニング</h3>
+                        <p>
+                            2階リビングならではの勾配天井。天井が高くなることで圧迫感が軽減され、実際の面積以上に広く感じられるゆとりを創出します。
+                        </p>
+                        <p>
+                            また、空間をゆるやかに区切る「下げ天井」を取り入れることで、一つの大空間の中でも「くつろぎの場」と「食事の場」のゾーニングを果たし、居心地の良さを生み出します。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="feature-row fade-in">
+                    <div class="feature-col">
+                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="サウナとバルコニー" class="feature-img">
+                    </div>
+                    <div class="feature-col feature-body">
+                        <h3>外とつながるリゾート空間と癒やしの光</h3>
+                        <p>
+                            リビングの延長として外空間とのつながりをつくるアウトドアバルコニー。テントサウナと水風呂を標準採用でき、グリーンや焚き火台、ハンモックなど家族のプライベートリゾートを作れます。
+                        </p>
+                        <p>
+                            室内の間接照明は、まぶしさや視覚的な刺激を減らします。暖色系の柔らかな光が副交感神経を優位にし、高級感を演出しながら深いリラックス効果とスムーズな入眠をサポートします。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ライフスタイル提案 -->
+    <section id="lifestyle" class="section section-white">
+        <div class="container">
+            <div class="section-title-wrap fade-in">
+                <p class="section-concept">life style</p>
+                <h2 class="section-title">アウトドアリビングで<br>どんな毎日を過ごしますか？</h2>
+                <div class="section-title-accent"></div>
+            </div>
+
+            <div class="lifestyle-grid">
+                <div class="lifestyle-card fade-in">
+                    <div class="icon-wrap">
+                        <i data-lucide="activity" class="icon"></i>
+                    </div>
+                    <h4>心と身体を整える時間</h4>
+                    <p>
+                        整うためには少しの運動やストレッチも重要です。広いバルコニーで身体を動かし、その後にサウナで最高の"整う時間"をお過ごしください。
+                    </p>
+                </div>
+                <div class="lifestyle-card fade-in">
+                    <div class="icon-wrap">
+                        <i data-lucide="wine" class="icon"></i>
+                    </div>
+                    <h4>大人同士の語らい</h4>
+                    <p>
+                        夕暮れ時からのひとときを、周囲の視線を気にすることなく、大人同士でグラスを傾けながら、ゆったりと会話を楽しむ時間としてお過ごしください。
+                    </p>
+                </div>
+                <div class="lifestyle-card fade-in">
+                    <div class="icon-wrap">
+                        <i data-lucide="tent" class="icon"></i>
+                    </div>
+                    <h4>お子様との自由な遊び</h4>
+                    <p>
+                        汚れても気にせず、水遊びやキャンプごっこなど自由な遊びをお子さんと楽しんでください。室内遊び以上に、お子さんの情操教育の大きなチャンスになります。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 会社概要 -->
+    <section id="company" class="section section-white">
+        <div class="container">
+            <div class="section-title-wrap fade-in">
+                <p class="section-concept">company</p>
+                <h2 class="section-title">会社概要</h2>
+                <div class="section-title-accent"></div>
+            </div>
+            <div class="company-grid">
+                <dl class="company-table">
+                    <div class="company-row">
+                        <dt>会社名</dt>
+                        <dd>株式会社ダミーハウジング</dd>
+                    </div>
+                    <div class="company-row">
+                        <dt>所在地</dt>
+                        <dd>〒000-0000　〇〇県〇〇市〇〇町0-0-0</dd>
+                    </div>
+                    <div class="company-row">
+                        <dt>TEL</dt>
+                        <dd>00-0000-0000</dd>
+                    </div>
+                    <div class="company-row">
+                        <dt>営業時間</dt>
+                        <dd>10:00〜18:00（水曜定休）</dd>
+                    </div>
+                    <div class="company-row">
+                        <dt>事業内容</dt>
+                        <dd>新築注文住宅・規格住宅の企画・設計・施工／リフォーム事業　ほか</dd>
+                    </div>
+                </dl>
+            </div>
+        </div>
+    </section>
+
+    <!-- アクセス -->
+    <section id="access" class="section section-brand-50">
+        <div class="container">
+            <div class="section-title-wrap fade-in">
+                <p class="section-concept">access</p>
+                <h2 class="section-title">アクセス</h2>
+                <div class="section-title-accent"></div>
+            </div>
+            <div class="access-grid">
+                <div class="access-map">
+                    <div class="map-placeholder">
+                        <p>Googleマップ埋め込みエリア（ダミー）</p>
+                    </div>
+                </div>
+                <div class="access-text">
+                    <p>
+                        〇〇駅から徒歩10分の住宅展示場内にモデルハウスがございます。<br>
+                        お車でお越しの際は、敷地内の専用駐車場（数台分）をご利用ください。
+                    </p>
+                    <ul class="access-list">
+                        <li>電車：〇〇線「〇〇駅」東口より徒歩10分</li>
+                        <li>バス：「〇〇中央」バス停より徒歩3分</li>
+                        <li>車：〇〇ICより約15分（駐車場あり）</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTAセクション -->
+    <section id="contact" class="section-cta">
+        <div class="bg-deco">
+            <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+                <polygon points="0,100 100,0 100,100" />
+            </svg>
+        </div>
+
+        <div class="cta-inner fade-in">
+            <h2>理想の日常はここから。</h2>
+            <p class="lead">
+                詳しい間取りプラン、価格、サウナのオプションなど、より詳細な情報が掲載されたパンフレットを無料でお届けいたします。
+            </p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn-primary">
+                    <i data-lucide="book-open" class="icon"></i>
+                    資料請求・お問い合わせ
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <a href="index.html">
+                    <i data-lucide="leaf" class="icon"></i>
+                    <span>Lumina Home</span>
+                </a>
+            </div>
+            <p class="company">株式会社ダミーハウジング</p>
+            <div class="footer-links">
+                <a href="#company">会社概要</a>
+                <a href="privacy.html">プライバシーポリシー</a>
+                <a href="#access">アクセス</a>
+            </div>
+            <p class="footer-copy">
+                Copyright &copy; Lumina Home Inc. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- スクリプト -->
+    <script>
+        // Lucideアイコンの初期化
+        lucide.createIcons();
+
+        // スクロール時のヘッダースタイル変更
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // ハンバーガーメニュー
+        const menuBtn = document.querySelector('.menu-btn');
+        const nav = document.querySelector('.nav');
+        let menuScrollY = 0;
+
+        function closeMenu(targetHash) {
+            nav.classList.remove('active');
+            document.body.classList.remove('menu-open');
+            document.body.style.top = '';
+            document.body.style.overflow = '';
+
+            // スクロール位置の復元を条件付きにする
+            // ハッシュ（#concept等）がない場合のみ元の位置に戻す
+            if (!targetHash && menuScrollY !== undefined) {
+                window.scrollTo(0, menuScrollY);
+            }
+
+            const icon = menuBtn.querySelector('.icon');
+            if (icon) {
+                icon.setAttribute('data-lucide', 'menu');
+                lucide.createIcons();
+            }
+        }
+
+        menuBtn.addEventListener('click', () => {
+            const isOpening = !nav.classList.contains('active');
+            nav.classList.toggle('active');
+            const icon = menuBtn.querySelector('.icon');
+            if (nav.classList.contains('active')) {
+                icon.setAttribute('data-lucide', 'x');
+                menuScrollY = window.scrollY || window.pageYOffset;
+                document.body.classList.add('menu-open');
+                document.body.style.top = -menuScrollY + 'px';
+                document.body.style.overflow = 'hidden';
+            } else {
+                closeMenu();
+            }
+            lucide.createIcons();
+        });
+
+        // メニューリンククリック時に閉じる
+        document.querySelectorAll('.nav-link, .nav-cta').forEach(link => {
+            link.addEventListener('click', (e) => {
+                const href = link.getAttribute('href');
+                const targetHash = href.startsWith('#') ? href : null;
+                closeMenu(targetHash);
+            });
+        });
+
+        // ウィンドウリサイズで768px以上になったらメニューを閉じる
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 768 && nav.classList.contains('active')) {
+                closeMenu();
+            }
+        });
+
+        // スムーズスクロール
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // スクロールアニメーション (Fade-in)
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('appear');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach((el) => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+
+</html>
