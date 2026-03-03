@@ -170,7 +170,7 @@ body.menu-open {
 
 @media (max-width: 767px) {
     .nav {
-        display: none;
+        display: flex;
         position: fixed;
         top: 0;
         left: 0;
@@ -193,14 +193,13 @@ body.menu-open {
     }
 
     .nav.active {
-        display: flex;
         opacity: 1;
         transform: translateY(0);
     }
 
     .nav a {
         font-family: var(--font-serif);
-        font-size: 1.1rem;
+        font-size: 0.95rem;
         width: 100%;
         text-align: center;
         padding: 0.9rem 0;
